@@ -5,18 +5,17 @@
 	</body>
 
 	<!--Login setup-->
-	<form id='login' action= 'index.php' method= 'post' accept-charset = 'UTF-8'>	     <fieldset>
-	<legend>Login</legend>
-	<input type= 'hidden' name='submitted' id= 'submitted' value='1'/>
-
-	<label for='username'>User Name*:</label>
-	<input type='text' name='username' id='username' maxlenghth="100"/>
+	<form id='login' action= 'index_submit' method= 'post' accept-charset = 'UTF-8'>	     
+	<ul>
+		<li><label for='username'>User Name*:</label>
+		<input type='email' name='username' placeholder='username@gmail.com' required>
+		</li>
 	
-	<label for='password'>Password*:</label>
-	<input type='text' name='password' id='password' maxlenghth="100"/>
+		<li><label for='password'>Password*:</label>
+		<input type='password' name='password' placeholder='password' required>
+		</li>
 
-	<input type='submit' name='submit' value='submit'/>
+		<li><input type='submit' value='login'></li>
 	
-	</fieldset>
 	</form>
 </html>
